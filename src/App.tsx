@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <TitleP>PORT FOLIO</TitleP>
+    <TitleP> "Hello! I'm KeemDaSol. Check out my portfolio and enjoy!"</TitleP>
+    <TitleP>PORT FOLIO</TitleP>
+  
+    </>
   );
 }
+const TitleP = styled.p `
+font-size: 128px;
+  color: #F6EDD9;
+  line-height: 180px;
+  transform: translateX();
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+`;
 export default App;
