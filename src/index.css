@@ -96,17 +96,27 @@ video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -125,21 +135,20 @@ img {
   vertical-align: top;
 }
 
-input, select, button {
+input,
+select,
+button {
   font: inherit;
   color: inherit;
   border: 0;
   background: transparent;
 }
 
-
 button {
   padding: 0;
   cursor: pointer;
   outline: none;
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -148,7 +157,10 @@ button {
 code {
   font-family: "Pretendard";
 }
-
+div{
+  margin: 0 auto;
+  position: relative;
+}
 /**************** font ******************/
 @font-face {
   font-family: "Pretendard";
@@ -230,3 +242,43 @@ code {
     url("./assets/fonts/Pretendard-Black.woff") format("woff"),
     url("./assets/fonts/Pretendard-Black.otf") format("otf");
 }
+@font-face {
+  font-family: "asterisk-sans-variable", sans-serif;
+  font-display: fallback;
+
+  src: url("./assets/fonts/fonnts.com-Asterisk_Sans_Variable.otf")
+    format("opentype");
+
+  /* 사용할 폰트의 기본 스타일 */
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.msg {
+  background-color: #468cf3;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='25' stroke-dasharray='2%2c 6' stroke-dashoffset='28' stroke-linecap='butt'/%3e%3c/svg%3e");
+
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 52px;
+  cursor: pointer;
+  bottom: 30px;
+  border-radius: 50%;
+
+
+}
+.msg p{
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+
+  font-weight: 400;
+  
+}
+
