@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import * as S from './title.style';
+import * as S from "./title.style";
 
-function TitleTxt() {
+const TitleTxt = () => {
   const titleRef = useRef(null);
   const starRefs = [useRef(null), useRef(null), useRef(null)];
   const msgTo = useRef(null);
@@ -71,11 +71,8 @@ function TitleTxt() {
       <S.Msg ref={msgTo}>
         <p>contact me</p>
       </S.Msg>
-
-
-
     </S.Title>
   );
-}
+};
 
 export default TitleTxt;
