@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import TitleTxt from "../title/title";
-import * as S from "./intro.style";
+import * as S from "../intro/intro.style";
 import me from "../../../assets/image/me.jpeg";
-
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -23,7 +21,6 @@ const IntroPage = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

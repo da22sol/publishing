@@ -5,6 +5,7 @@ export const ToyInfo = styled.div`
   width: 100%;
   background: #fff;
   padding-top: 30vw;
+  font-family: "Pretendard";
 `;
 export const ToyH2 = styled.h2`
   padding-top: 5vw;
@@ -73,8 +74,7 @@ a {
   border: 1px solid #339af0;
   border-radius: 10px;
   text-align: center;
-  width: 130px;
-  height: 130px;
+
   font-size: 12px;
 }
 a:hover {
@@ -116,7 +116,7 @@ a {
   border: 1px solid #a389cb;
   border-radius: 10px;
   text-align: center;
-  width: 130px;
+
   font-size: 12px;
 }
 a:hover {

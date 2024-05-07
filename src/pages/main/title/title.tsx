@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import * as S from "./title.style";
+import * as S from "../title/title.style";
 
 const TitleTxt = () => {
   const titleRef = useRef(null);

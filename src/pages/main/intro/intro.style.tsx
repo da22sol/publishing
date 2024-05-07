@@ -9,6 +9,7 @@ export const Section2 = styled.div`
   width: 100%;
   height: auto;
   min-height: 30vh;
+
   ul,
   ol {
     text-align: left;
@@ -56,6 +57,7 @@ export const TitP = styled.p`
 
 export const Intro = styled.div<{ ScrollColor: boolean }>`
   background-color: ${({ ScrollColor }) => (ScrollColor ? "white" : "none")};
+  font-family: "Pretendard";
 `;
 
 export const Number = styled.div`
