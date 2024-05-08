@@ -7,7 +7,6 @@ body {
   text-align: left;
   width: 100%;
   background-color: #519d5a;
-
 }
 html,
 body,
@@ -257,156 +256,133 @@ div {
 }
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
 
-
-
-.PubBox {
-  height: 100vh;
+.about {
   width: 100%;
-  
+  background: #519d5a;
+  padding-top: 15vw;
+  font-family: "Pretendard";
+  position: relative;
 }
 
-.port {
-  background-color: #519d5a;
+.AboutH2 {
+  padding-top: 5vw;
+  text-align: right;
+  font-size: 70px;
+  font-weight: 800;
+  padding-right: 40px;
+  color: #519d5a;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.AboutBox {
+  grid-area: auto;
+  display: flex;
+  margin: 50px 0px 0px;
+  inset: auto;
+  position: relative;
+
+  overflow: visible;
+  box-sizing: border-box;
+  width: 1440px;
+  height: 1440px;
+  padding: 0px 0px 720px;
+}
+
+.SkiList {
+  height: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+/* .SkiItm:hover .ItmBox {
+  transform: rotateY(180deg);
+} */
+
+.SkiItm {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  margin: 50px auto;
+  border-radius: 20px;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+
+.about .SkiItm + .SkiItm {
+  margin-left: 60px;
+}
+
+.ItmBox {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+}
+.ItmTxt {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
 }
 
-.PubImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.PubImg img {
-  width: 700px;
-  max-height: 650px;
-}
-
-.PubTxt {
-  overflow: visible;
+.ItmBox p {
+  font-weight: 700;
   text-align: center;
-  color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 0 6vw;
-}
-.PubH4 {
-  line-height: 1;
-  font-size: 25px;
-  font-style: italic;
-}
-.PubTH2 {
-  font-size: 50px;
-  padding: 18px 0;
+  font-size: 76px;
+  margin: 50px 0;
 }
 
-.PubBox p {
-  line-height: 2;
+.ItmTxt span {
   font-size: 20px;
+  width: 70px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.ColorBox {
+  background-color: #e2b2d9;
 }
 
-.SiteBtn {
-  overflow: visible;
+.HBox,
+.CBox,
+.JBox,
+.RBox,
+.TBox {
+  border-radius: 50%;
 
-  margin:24px 0;
-}
-
-.SiteBtn a {
-  padding: 10px;
-  border: 1px solid #FFF;
-  border-radius: 15%;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  margin-right: 10px;
-  font-size: 12px;
-  color: #FFF;
-}
-.SiteBtn a:hover{
-  background-color:#f6edd9;
-  border:1px solid #f6edd9;
-  color: #000;
-}
-
-.ProjectWrap{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 auto;
   display: flex;
-  width: 100%;
-  height: 100vh;
-}
-
-.deajeon {
-  background-color: #e7f2e4;
-  width: 100%;
-  height: 100%;
-  display: flex;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-.PubTxtB{
-  overflow: visible;
-  text-align: center;
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 0 6vw;
 }
 
-.PubTxtB p{
-  line-height: 1.4;
-  font-size: 20px;
+.HBox {
+  background-color: #fa5026;
+}
+.CBox {
+  background-color: #2f80ed;
+}
+.JBox {
+  background-color: #ffcc00;
+}
+.RBox {
+  background-color: #61dafb;
 }
 
-
-.deajeon .SiteBtn a {
-  padding: 10px;
-  border: 1px solid #000000;
-  border-radius: 15%;
-  text-align: center;
-  margin-right: 10px;
-  font-size: 12px;
-  color: #000;
-}
-.deajeon .SiteBtn a:hover{
-  background-color:#69b97c;
-  border: 1px solid #69b97c;
-  color: #fff;
-}
-
-.company{
-  background-color: #ae3b4d;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.company .SiteBtn a {
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 15%;
-  text-align: center;
-  margin-right: 10px;
-  font-size: 12px;
-  color: #fff;
-}
-.company .SiteBtn a:hover{
-  background-color:#a31f33;
-  border: 1px solid #a31f33;
-  color: #000;
+.TBox {
+  background-color: #2f80ed;
 }

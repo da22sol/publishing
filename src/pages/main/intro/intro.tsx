@@ -50,7 +50,7 @@ const IntroPage = () => {
     });
   }, []);
   return (
-    <div>
+    <>
       <S.Intro ScrollColor={ScrollColor}>
         <S.Section2>
           <img src={me} alt="img" />
@@ -91,7 +91,7 @@ const IntroPage = () => {
           </S.TitP>
         </S.TxtBox>
       </S.Intro>
-    </div>
+    </>
   );
 };
 

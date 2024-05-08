@@ -63,7 +63,7 @@ export const Intro = styled.div<{ ScrollColor: boolean }>`
 export const Number = styled.div`
   display: flex;
   justify-content: flex-end;
-  padding: 2vw 5vw 12vw 5vw;
+  padding: 4vw 5vw 12vw 5vw;
   color: #000;
 `;
 export const NumBox = styled.div`

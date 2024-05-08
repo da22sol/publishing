@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const ToyInfo = styled.div`
   width: 100%;
   background: #fff;
-  padding-top: 30vw;
+  padding-top: 20vw;
   font-family: "Pretendard";
 `;
 export const ToyH2 = styled.h2`
