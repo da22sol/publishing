@@ -4,6 +4,8 @@ export const Pub = styled.div`
   width: 100%;
   background: #fff;
   font-family: "Pretendard";
+  position: -webkit-sticky;
+  position: sticky;
 `;
 
 export const PubH2 = styled.h2`
@@ -18,6 +20,7 @@ export const PubH2 = styled.h2`
 export const PubBox = styled.div`
   height: 100vh;
   width: 100%;
+
 `;
 
 export const port = styled.div`

@@ -1,8 +1,7 @@
-import styled from "styled-components";
 import React from "react";
-import Chall1 from "../../../assets/image/chall1.png";
-import Furniture from "../../../assets/image/Furniture.png";
-import * as S from "../toy/toy.style";
+import Chall1 from "../../../../assets/image/chall1.png";
+import Furniture from "../../../../assets/image/Furniture.png";
+import * as S from "./toy.style";
 const Toy = () => {
   return (
     <>

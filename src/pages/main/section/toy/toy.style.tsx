@@ -1,4 +1,4 @@
-import exp from "constants";
+
 import styled from "styled-components";
 
 export const ToyInfo = styled.div`
