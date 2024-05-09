@@ -11,7 +11,7 @@ const IntroPage = () => {
   useEffect(() => {
     const handleScroll = () => {
       const ScrollY = window.scrollY;
-      const ScrollHeight = 682;
+      const ScrollHeight = 1610;
       if (ScrollY > ScrollHeight) {
         setScroll(true);
       } else {

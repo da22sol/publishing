@@ -58,6 +58,7 @@ export const TitP = styled.p`
 export const Intro = styled.div<{ ScrollColor: boolean }>`
   background-color: ${({ ScrollColor }) => (ScrollColor ? "white" : "none")};
   font-family: "Pretendard";
+  transition: background 0.5s ease-in-out;
 `;
 
 export const Number = styled.div`
