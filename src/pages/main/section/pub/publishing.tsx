@@ -47,7 +47,7 @@ const Publishing = () => {
             <S.PubTH2>개인 포트폴리오</S.PubTH2>
             <p>리액트-타입스크립트 기반으로 만든 개인포트폴리오 사이트</p>
             <S.SiteBtn>
-            <a href="https://frosted-brook-b69.notion.site/3b51d434d5b94d3c998bfd86c79490c2?pvs=74">site</a>
+
               <a href="https://github.com/da22sol/publishing">git에서보기</a>
               <a href="https://frosted-brook-b69.notion.site/a750decbce704ec2821c5030ad4f6892">코드리뷰</a>
             </S.SiteBtn>
