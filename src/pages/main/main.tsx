@@ -5,6 +5,7 @@ import Toy from "./section/toy/toy";
 import Publishing from "./section/pub/publishing";
 import Skills from "./section/skills/skills";
 import Email from "./section/email/email";
+import Footer from "../../components/footer";
 const MainPage = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const MainPage = () => {
       <Publishing />
       <Skills />
       <Email />
+      <Footer />
     </>
   );
 };

@@ -5,20 +5,26 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 const IntroPage = () => {
-  const [ScrollColor, setScroll] = useState(false);
+  const [ScrollColor, setScrollColor] = useState(false);
   const TxtBoxRef = useRef(null);
   const NumBoxRef = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
       const ScrollY = window.scrollY;
-      const ScrollHeight = 1610;
-      if (ScrollY > ScrollHeight) {
-        setScroll(true);
+      let ScrollHeight;
+      const windowWidth = window.innerWidth;
+      if (windowWidth >= 1025) {
+        ScrollHeight = 1610;
       } else {
-        setScroll(false);
+        ScrollHeight = 1100;
+      }
+
+      if (ScrollY > ScrollHeight) {
+        setScrollColor(true);
+      } else {
+        setScrollColor(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -37,18 +43,38 @@ const IntroPage = () => {
         toggleActions: "play none none reverse",
       },
     });
-    gsap.set(NumBoxRef, { y: 0 });
-    gsap.to(NumBoxRef.current, {
-      y: -280,
-      duration: 1.5,
-      scrollTrigger: {
-        trigger: NumBoxRef.current,
-        start: "top 20%",
-        end: "bottom top",
-        toggleActions: "play none none reverse",
-      },
-    });
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      let numBoxY;
+
+      if (windowWidth >= 1025) {
+        numBoxY = -280;
+      } else {
+        numBoxY = -200;
+      }
+
+      gsap.set(NumBoxRef, { y: 0 });
+      gsap.to(NumBoxRef.current, {
+        y: numBoxY,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: NumBoxRef.current,
+          start: "top 20%",
+          end: "bottom top",
+          toggleActions: "play none none reverse",
+        },
+      });
+    };
+
+    handleResize(); // 초기 렌더링 시 실행
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
+
   return (
     <>
       <S.Intro ScrollColor={ScrollColor}>
@@ -65,7 +91,7 @@ const IntroPage = () => {
               <li>김다솔</li>
               <li>95.01.22</li>
               <li>대전광역시</li>
-              <li>gyeoul@gmail.com</li>
+              <li>gyeoul299@gmail.com</li>
             </ol>
           </S.Section2Txt>
         </S.Section2>

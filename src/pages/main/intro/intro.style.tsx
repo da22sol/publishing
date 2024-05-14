@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 export const Section2 = styled.div`
@@ -8,7 +7,6 @@ export const Section2 = styled.div`
   justify-content: center;
   width: 100%;
   height: auto;
-  min-height: 30vh;
 
   ul,
   ol {
@@ -26,6 +24,21 @@ export const Section2 = styled.div`
   img {
     width: 40%;
   }
+  @media (max-width: 1024px) {
+    padding-top: 25vw;
+  }
+  @media (max-width: 780px) {
+    ul {
+      margin-left: 20px;
+    }
+  }
+  @media (max-width: 430px) {
+    display: block;
+    padding-bottom: 30vw;
+    img {
+      width: 100%;
+    }
+  }
 `;
 export const Section2Txt = styled.div`
   display: flex;
@@ -35,6 +48,21 @@ export const Section2Txt = styled.div`
   transform: translate(0, 50%);
   color: #464646;
   margin: 0 auto;
+  @media (max-width: 1024px) {
+    width: 500px;
+    height: 280px;
+    ol {
+      margin-left: 40px;
+    }
+  }
+  @media (max-width: 780px) {
+    transform: translate(0, 20%);
+    width: 400px;
+    letter-spacing: -1.6px;
+  }
+  @media (max-width: 430px) {
+    transform: translate(0, 0);
+  }
 `;
 
 export const TxtBox = styled.div`
@@ -42,6 +70,13 @@ export const TxtBox = styled.div`
   color: #464646;
   opacity: 0.4;
   transform: translate(40%, 10px);
+
+  @media (max-width: 768px) {
+    transform: translate(25%, 0);
+  }
+  @media (max-width: 420px) {
+    transform: translate(20px, 10px);
+  }
 `;
 export const TitH2 = styled.h2`
   line-height: 1.6;
@@ -52,6 +87,10 @@ export const TitP = styled.p`
   line-height: 1.4;
   span {
     display: block;
+  }
+  @media (max-width: 420px) {
+    font-size: 13px;
+    line-height: 1.2;
   }
 `;
 
@@ -75,6 +114,10 @@ export const NumBox = styled.div`
   margin: 0;
   overflow: hidden;
   flex-direction: row;
+  @media (max-width: 1024px) {
+    height: 190px;
+    font-size: 200px;
+  }
 `;
 export const NumList = styled.ul`
   display: flex;

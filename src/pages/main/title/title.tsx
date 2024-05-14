@@ -24,6 +24,19 @@ const TitleTxt = () => {
     );
 
     starRefs.forEach((starRef) => {
+      let rotateValue;
+      const windowWidth = window.innerWidth;
+
+      if (windowWidth >= 1440) {
+        rotateValue = 90;
+      } else if (windowWidth >= 1024) {
+        rotateValue = 100;
+      } else if (windowWidth >= 768) {
+        rotateValue = 110;
+      } else {
+        rotateValue = 95;
+      }
+
       gsap.fromTo(
         starRef.current,
         {
@@ -32,14 +45,15 @@ const TitleTxt = () => {
         },
         {
           fontWeight: 100,
-          rotate: 120,
+          rotate: rotateValue,
           repeat: -1,
           duration: 1.5,
-          ease: "expo.inOut",
+          ease: "expo.inOut", 
           yoyo: true,
         }
       );
     });
+
     gsap.fromTo(
       msgTo.current,
       { y: -80 },
@@ -58,8 +72,8 @@ const TitleTxt = () => {
       <S.TitleH1 ref={titleRef}>PORT FOLIO</S.TitleH1>
       <S.TitleP>
         <S.TitleH1> </S.TitleH1>
-        "Hello! I'm KeemDaSol. I hope you enjoy browsing my portfolio. thank
-        you!"
+        ✿"Hello! I'm KimDaSol. I hope you enjoy browsing my portfolio. thank
+        you!"✿
       </S.TitleP>
       <S.Line1 />
       <S.Line2 />
@@ -69,7 +83,7 @@ const TitleTxt = () => {
         <S.Star ref={starRefs[2]}>*</S.Star>
       </S.StarContainer>
       <S.Msg ref={msgTo}>
-        <p>contact me</p>
+        <a href="mailto:gyeoul299@gmail.com">contact me</a>
       </S.Msg>
     </S.Title>
   );

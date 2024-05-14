@@ -15,12 +15,16 @@ export const PubH2 = styled.h2`
   font-weight: 800;
   color: #fff;
   -webkit-text-stroke: 1px #519d5a;
+  @media (max-width: 430px) {
+    text-align: center;
+
+    font-size: 56px;
+  }
 `;
 
 export const PubBox = styled.div`
   height: 100vh;
   width: 100%;
-
 `;
 
 export const port = styled.div`
@@ -43,21 +47,40 @@ export const PubImg = styled.div`
     width: 700px;
     max-height: 650px;
   }
+  @media (max-width: 1024px) {
+    img {
+      width: 500px;
+    }
+  }
+  @media (max-width: 430px) {
+    img {
+      width: 300px;
+      max-height: 250px;
+    }
+  }
 `;
 export const PubTxt = styled.div`
-overflow: visible;
-text-align: center;
-color: #f4f4f4;
-display: flex;
-flex-direction: column;
-align-items: center;
+  overflow: visible;
+  text-align: center;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-p{
-  line-height: 2;
-  font-size: 20px;
-}
-}
-
+  p {
+    line-height: 2;
+    font-size: 20px;
+  }
+  @media (max-width: 1024px) {
+    padding: 5vw 0;
+  }
+  @media (max-width: 430px) {
+    margin-top: 10px;
+    p {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
 `;
 export const PubH4 = styled.h4`
   line-height: 1;
@@ -66,9 +89,11 @@ export const PubH4 = styled.h4`
 `;
 
 export const PubTH2 = styled.h2`
-font-size: 45px;
-padding: 18px 0;
-}
+  font-size: 45px;
+  padding: 18px 0;
+  @media (max-width: 430px) {
+    font-size: 30px;
+  }
 `;
 
 export const SiteBtn = styled.div`
@@ -111,6 +136,16 @@ export const PubTxtB = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 6vw;
+  @media (max-width: 1024px) {
+    padding: 5vw 0;
+  }
+  @media (max-width: 430px) {
+    margin-top: 10px;
+    p {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
 `;
 
 export const SiteBtn2 = styled.div`
@@ -134,15 +169,15 @@ export const SiteBtn2 = styled.div`
 `;
 
 export const company = styled.div`
-background-color: #ae3b4d;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-align-content: center;
-flex-wrap: wrap;
-`
+  background-color: #ae3b4d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+`;
 export const SiteBtn3 = styled.div`
   overflow: visible;
   margin: 24px 0;
@@ -156,10 +191,9 @@ export const SiteBtn3 = styled.div`
     color: #fff;
   }
 
-  a:hover{
-    background-color:#a31f33;
+  a:hover {
+    background-color: #a31f33;
     border: 1px solid #a31f33;
     color: #000;
   }
-  
 `;

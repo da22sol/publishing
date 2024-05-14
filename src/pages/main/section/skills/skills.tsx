@@ -8,23 +8,25 @@ const Skills = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.fromTo(
-      AboutScroll.current,
-      { translateX: 0 },
-      {
-        translateX: -1400,
-        ease: "none",
-        scrollTrigger: {
-          trigger: AboutUl.current,
-          start: "top top",
-          end: "bottom center",
-          scrub: 0.7,
-          pin: AboutScroll.current,
-        },
-      }
-    );
-  });
-
+  
+    if (window.innerWidth >= 1024) {
+      gsap.fromTo(
+        AboutScroll.current,
+        { translateX: 0 },
+        {
+          translateX: -1400,
+          ease: "none",
+          scrollTrigger: {
+            trigger: AboutUl.current,
+            start: "top top",
+            end: "bottom center",
+            scrub: 0.7,
+            pin: AboutScroll.current,
+          },
+        }
+      );
+    }
+  }, []);
   return (
     <div>
       <S.About ref={AboutScroll}>
@@ -143,8 +145,6 @@ const Skills = () => {
               </S.ItmBox>
             </S.SkiItm>
           </S.SkiList>
-
-    
         </S.AboutBox>
       </S.About>
     </div>

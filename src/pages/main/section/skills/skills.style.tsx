@@ -22,6 +22,10 @@ export const About = styled.div`
   position: relative;
   overflow: visible;
   max-height: 1480px;
+  @media (max-width: 820px) {
+    max-height: none;
+  }
+  
 }
 `;
 
@@ -33,6 +37,10 @@ export const AboutH2 = styled.h2`
   padding-right: 40px;
   color: #519d5a;
   -webkit-text-stroke: 1px #fff;
+  @media (max-width: 430px) {
+    text-align: center;
+    padding-right: 0;
+  }
 `;
 
 export const AboutBox = styled.div`
@@ -41,12 +49,19 @@ export const AboutBox = styled.div`
   margin: 50px 0px 0px;
   inset: auto;
   position: relative;
-  overflow: visible;
   box-sizing: border-box;
   width: 1440px;
   height: 1440px;
   padding: 0px 0px 720px;
   overflow: visible;
+  @media (max-width: 820px) {
+    width: 100%;
+    flex-direction: column;
+    height: 1000px;
+  }
+  @media (max-width: 430px) {
+    height: 2000px;
+  }
 `;
 
 export const SkiList = styled.ul`
@@ -62,13 +77,18 @@ export const SkiList = styled.ul`
   margin-top: 50px;
   padding-left: 25px;
   padding-bottom: 50px;
-
+  @media (max-width: 1023px) {
+    gap: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    height: auto;
+  }
 `;
 
 export const SkiItm = styled.li`
-overflow: visible;
-  width: 25vw;
-  height: 25vw;
+  overflow: visible;
+  width: 30vw;
+  height: 30vw;
   margin: 50px auto;
   border-radius: 20px;
   -webkit-perspective: 500px;
@@ -79,6 +99,17 @@ overflow: visible;
   }
   &:hover .ItmBox {
     transform: rotateY(180deg);
+  }
+  @media (max-width: 1023px) {
+    margin: 0;
+    width: calc(50% - 12.5px);
+    &:nth-child(n + 2) {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 70vw;
   }
 `;
 
@@ -103,7 +134,6 @@ export const BackBox = styled.div`
   left: 0;
   top: 0;
   backface-visibility: hidden;
-
 `;
 export const ColorBoxItmTxt = styled.div`
   padding: 30px;
@@ -120,8 +150,7 @@ export const ColorBoxItmTxt = styled.div`
     text-align: center;
     font-size: 60px;
     margin: 50px 0;
-    letter-spacing:2px;
-  
+    letter-spacing: 2px;
   }
 
   span {
@@ -130,6 +159,15 @@ export const ColorBoxItmTxt = styled.div`
     position: absolute;
     right: 20px;
     bottom: 20px;
+  }
+  @media (max-width: 1024px) {
+    p {
+      font-weight: 700;
+      text-align: center;
+      font-size: 50px;
+      margin: 20px 0;
+      letter-spacing: 2px;
+    }
   }
 `;
 
@@ -160,16 +198,16 @@ export const TBox = styled.div`
 export const PBox = styled.div`
   ${commonBoxStyles}
   background-color: #f8e276;
-  font-size:30px;
+  font-size: 30px;
 `;
 export const BackTxt = styled.div`
-font-size: 14px;
-    padding-top: 8vw;
-    font-weight: 500;
+  font-size: 14px;
+  padding-top: 8vw;
+  font-weight: 500;
 
-    p{
-      padding-bottom: 10px;
-      line-height: 1.4;
-      letter-spacing: -1px;
-    }
-`
+  p {
+    padding-bottom: 10px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+  }
+`;
