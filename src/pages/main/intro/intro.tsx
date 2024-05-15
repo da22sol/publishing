@@ -86,12 +86,16 @@ const IntroPage = () => {
               <li>나이:</li>
               <li>거주지:</li>
               <li>이메일:</li>
+              <li>경력:</li>
             </ul>
             <ol>
               <li>김다솔</li>
               <li>95.01.22</li>
               <li>대전광역시</li>
               <li>gyeoul299@gmail.com</li>
+              <li>1.UI/UX 웹디자인&웹퍼블리셔 실무과정수료<em>(2021. 11 ~ 2022. 05)</em></li>
+              <li>2.엘리스 SW Engineer 트랙<em>(2023.05.15 ~ 2023.09.01)</em></li>
+             
             </ol>
           </S.Section2Txt>
         </S.Section2>

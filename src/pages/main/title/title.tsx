@@ -83,7 +83,7 @@ const TitleTxt = () => {
         <S.Star ref={starRefs[2]}>*</S.Star>
       </S.StarContainer>
       <S.Msg ref={msgTo}>
-        <a href="mailto:gyeoul299@gmail.com">contact me</a>
+        <a href="https://frosted-brook-b69.notion.site/3dc6b8e12a084808b78d69178acce7d9">Resume</a>
       </S.Msg>
     </S.Title>
   );

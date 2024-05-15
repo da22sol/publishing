@@ -8,30 +8,13 @@ export const Section2 = styled.div`
   width: 100%;
   height: auto;
 
-  ul,
-  ol {
-    text-align: left;
-    font-size: 20px;
-    line-height: 1.6;
-    margin-left: 60px;
-    margin-right: 20px;
-    font-family: "Pretendard";
-    transform: translate(50%, 30%);
-  }
-  li {
-  }
-
   img {
     width: 40%;
   }
   @media (max-width: 1024px) {
     padding-top: 25vw;
   }
-  @media (max-width: 780px) {
-    ul {
-      margin-left: 20px;
-    }
-  }
+
   @media (max-width: 430px) {
     display: block;
     padding-bottom: 30vw;
@@ -43,25 +26,57 @@ export const Section2 = styled.div`
 export const Section2Txt = styled.div`
   display: flex;
   width: 600px;
-  height: 330px;
+  height: 400px;
   background-color: #f8e276;
   transform: translate(0, 50%);
   color: #464646;
   margin: 0 auto;
+  em {
+    font-size: 10px;
+    display: block;
+  }
+  ul,
+  ol {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: "Pretendard";
+    transform: translate(50%, 30%);
+  }
+  ol li:nth-child(5),
+  ol li:nth-child(6) {
+    font-size: 14px;
+    font-weight: 700;
+  }
   @media (max-width: 1024px) {
     width: 500px;
-    height: 280px;
+    height: 300px;
+    ul,
     ol {
-      margin-left: 40px;
+      transform: translate(50%, 20%);
     }
   }
-  @media (max-width: 780px) {
+  @media (max-width: 860px) {
     transform: translate(0, 20%);
     width: 400px;
     letter-spacing: -1.6px;
+    ul {
+      margin-left: 20px;
+    }
   }
   @media (max-width: 430px) {
     transform: translate(0, 0);
+    ul,
+    ol {
+      font-size: 16px;
+    }
+    ol li:nth-child(5),
+    ol li:nth-child(6) {
+      font-size: 12px;
+      font-weight: 400;
+    }
   }
 `;
 
