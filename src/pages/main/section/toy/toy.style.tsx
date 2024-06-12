@@ -32,7 +32,7 @@ export const ToyBox = styled.div`
   @media (max-width: 1024px) {
     margin: 0 auto;
   }
-  @media (max-width: 860px) {
+  @media (max-width: 940px) {
     flex-wrap: nowrap;
   }
 `;
@@ -76,7 +76,9 @@ export const InfoH3 = styled.h3`
   font-weight: 600;
   font-size: 40px;
   line-height: 1.6;
-
+  @media (max-width: 10230px) {
+    font-size: 30px;
+  }
   @media (max-width: 430px) {
     font-size: 20px;
   }
@@ -154,7 +156,7 @@ export const ToyBox2 = styled.div`
   @media (max-width: 1024px) {
     margin: 0 auto;
   }
-    @media (max-width: 820px) {
+    @media (max-width: 940px) {
     flex-wrap: nowrap;
   }
 `;

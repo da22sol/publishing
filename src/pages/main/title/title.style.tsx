@@ -15,8 +15,8 @@ export const TitleH1 = styled.h1`
   @media (max-width: 1200px) {
     font-size: 150px;
   }
-  @media (max-width: 820px) {
-    font-size: 130px;
+  @media (max-width: 1023px) {
+    font-size: 100px;
   }
   @media (max-width: 760px) {
     font-size: 80px;
@@ -24,7 +24,7 @@ export const TitleH1 = styled.h1`
   @media (max-width: 430px) {
     font-size: 60px;
   }
-    @media (max-width: 360px) {
+    @media (max-width: 390px) {
     font-size: 50px;
   }
   @media (max-width: 340px) {

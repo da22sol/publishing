@@ -12,7 +12,7 @@ const TitleTxt = () => {
     titleTimeline.fromTo(
       titleRef.current,
       {
-        fontWeight: 800,
+        fontWeight: 700,
       },
       {
         fontWeight: 100,

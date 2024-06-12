@@ -6,7 +6,6 @@ export const Pub = styled.div`
   font-family: "Pretendard";
   position: -webkit-sticky;
   position: sticky;
-  
 `;
 
 export const PubH2 = styled.h2`
@@ -37,10 +36,11 @@ export const port = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  @media (max-width: 1023px) {
+
+  @media (max-width: 1200px) {
     flex-wrap: nowrap;
   }
-  @media (max-width: 769px) {
+  @media (max-width: 760px) {
     flex-wrap: wrap;
   }
 `;
@@ -54,9 +54,15 @@ export const PubImg = styled.div`
     width: 700px;
     max-height: 650px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     img {
       width: 500px;
+    }
+  }
+  
+    @media (max-width: 768px) {
+    img {
+      width: 400px;
     }
   }
   @media (max-width: 430px) {
@@ -102,7 +108,7 @@ export const PubH4 = styled.h4`
 export const PubTH2 = styled.h2`
   font-size: 45px;
   padding: 18px 0;
-  @media (max-width: 430px) {
+  @media (max-width: 768px) {
     font-size: 30px;
   }
 `;
@@ -137,10 +143,10 @@ export const deajeon = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  @media (max-width: 1023px) {
+  @media (max-width: 1200px) {
     flex-wrap: nowrap;
   }
-  @media (max-width: 769px) {
+  @media (max-width: 760px) {
     flex-wrap: wrap;
   }
 `;
@@ -156,9 +162,16 @@ export const PubTxtB = styled.div`
   @media (max-width: 1024px) {
     padding: 5vw 0;
   }
+  @media (max-width: 768px) {
+
+    p {
+          letter-spacing: -2px;
+
+    }
   @media (max-width: 430px) {
     margin-top: 10px;
     p {
+          letter-spacing: 0;
       font-size: 14px;
       line-height: 1.2;
     }
@@ -194,10 +207,10 @@ export const company = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  @media (max-width: 1023px) {
+  @media (max-width: 1200px) {
     flex-wrap: nowrap;
   }
-  @media (max-width: 769px) {
+  @media (max-width: 760px) {
     flex-wrap: wrap;
   }
 `;
