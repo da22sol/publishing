@@ -32,7 +32,7 @@ export const ToyBox = styled.div`
   @media (max-width: 1024px) {
     margin: 0 auto;
   }
-  @media (max-width: 820px) {
+  @media (max-width: 860px) {
     flex-wrap: nowrap;
   }
 `;
@@ -131,6 +131,14 @@ export const InfoImg = styled.div`
     left: 0;
     img {
       width: 200px;
+      max-height: 150px;
+    }
+  }
+  @media (max-width: 350px) {
+    left: -21px;
+    bottom: 126px;
+    img {
+      width: 150px;
       max-height: 150px;
     }
   }
