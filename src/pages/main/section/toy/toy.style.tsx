@@ -50,6 +50,11 @@ export const InfoTxt = styled.div`
     float: right;
     text-align: justify;
   }
+  @media (max-width: 1023px) {
+    p {
+      width: 100%;
+    }
+  }
   @media (max-width: 430px) {
     width: 100%;
     p {
@@ -76,7 +81,7 @@ export const InfoH3 = styled.h3`
   font-weight: 600;
   font-size: 40px;
   line-height: 1.6;
-  @media (max-width: 10230px) {
+  @media (max-width: 1023px) {
     font-size: 30px;
   }
   @media (max-width: 430px) {
@@ -108,9 +113,16 @@ export const SiteBtn = styled.div`
 
     font-size: 12px;
   }
+
   a:hover {
     background-color: #339af0;
     color: #fff;
+  }
+
+  @media (max-width: 1023px) {
+    a {
+      padding: 8px;
+    }
   }
   @media (max-width: 430px) {
     bottom: 14vw;
@@ -131,14 +143,17 @@ export const InfoImg = styled.div`
     position: absolute;
     bottom: 87px;
     left: 0;
+
     img {
       width: 200px;
       max-height: 150px;
     }
   }
-  @media (max-width: 350px) {
+
+  @media (max-width: 360px) {
     left: -21px;
     bottom: 126px;
+
     img {
       width: 150px;
       max-height: 150px;
@@ -156,7 +171,7 @@ export const ToyBox2 = styled.div`
   @media (max-width: 1024px) {
     margin: 0 auto;
   }
-    @media (max-width: 940px) {
+  @media (max-width: 940px) {
     flex-wrap: nowrap;
   }
 `;

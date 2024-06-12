@@ -71,7 +71,7 @@ const TitleTxt = () => {
     <S.Title>
       <S.TitleH1 ref={titleRef}>PORT FOLIO</S.TitleH1>
       <S.TitleP>
-        <S.TitleH1> </S.TitleH1>
+      
         ✿"Hello! I'm KimDaSol. I hope you enjoy browsing my portfolio. thank
         you!"✿
       </S.TitleP>
