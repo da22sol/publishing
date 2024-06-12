@@ -6,6 +6,7 @@ export const Pub = styled.div`
   font-family: "Pretendard";
   position: -webkit-sticky;
   position: sticky;
+  
 `;
 
 export const PubH2 = styled.h2`
@@ -36,6 +37,12 @@ export const port = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  @media (max-width: 1023px) {
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 769px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const PubImg = styled.div`
@@ -73,6 +80,10 @@ export const PubTxt = styled.div`
   }
   @media (max-width: 1024px) {
     padding: 5vw 0;
+    p {
+      line-height: 1.4;
+      font-size: 16px;
+    }
   }
   @media (max-width: 430px) {
     margin-top: 10px;
@@ -126,6 +137,12 @@ export const deajeon = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  @media (max-width: 1023px) {
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 769px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const PubTxtB = styled.div`
@@ -177,6 +194,12 @@ export const company = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  @media (max-width: 1023px) {
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 769px) {
+    flex-wrap: wrap;
+  }
 `;
 export const SiteBtn3 = styled.div`
   overflow: visible;

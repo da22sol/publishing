@@ -59,6 +59,9 @@ export const AboutBox = styled.div`
     flex-direction: column;
     height: 1000px;
   }
+  @media (max-width: 640px) {
+    height: 2800px;
+  }
   @media (max-width: 430px) {
     height: 2000px;
   }
@@ -77,12 +80,17 @@ export const SkiList = styled.ul`
   margin-top: 50px;
   padding-left: 25px;
   padding-bottom: 50px;
+
+
   @media (max-width: 1023px) {
     gap: 25px;
     padding-right: 25px;
     flex-wrap: wrap;
     height: auto;
+    width: 100vw;
   }
+
+
 `;
 
 export const SkiItm = styled.li`
@@ -107,7 +115,11 @@ export const SkiItm = styled.li`
       margin-left: 0;
     }
   }
+
   @media (max-width: 767px) {
+    width: calc(50% - 18px);
+  }
+  @media (max-width: 640px) {
     width: 100%;
     height: 70vw;
   }

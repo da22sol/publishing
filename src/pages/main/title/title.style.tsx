@@ -12,17 +12,23 @@ export const TitleH1 = styled.h1`
   display: flex;
   align-items: center;
   font-weight: 800;
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     font-size: 150px;
   }
   @media (max-width: 820px) {
     font-size: 130px;
+  }
+  @media (max-width: 760px) {
+    font-size: 80px;
   }
   @media (max-width: 430px) {
     font-size: 60px;
   }
     @media (max-width: 360px) {
     font-size: 50px;
+  }
+  @media (max-width: 340px) {
+    font-size: 30px;
   }
 `;
 
@@ -37,7 +43,7 @@ export const TitleP = styled.p`
   align-items: center;
   justify-content: flex-start;
   letter-spacing: 1.3px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     font-size: 26px;
     top: 227px;
   }
