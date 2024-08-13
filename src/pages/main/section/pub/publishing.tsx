@@ -83,9 +83,9 @@ const Publishing = () => {
                     </S.PubImg>
                     <S.PubTxtB>
                         <S.PubH4>3/4</S.PubH4>
-                        <S.PubTH2>컴퍼니 회사 사이트</S.PubTH2>
+                        <S.PubTH2>AMUSE</S.PubTH2>
                         <p>가상의 회사 사이트를 gdweb를 참고하여 만들었습니다.</p>
-                        <p> fullPage.js 이루어진 반응형 웹사이트입니다</p>
+                        <p> swiper를 이용한 반응형 웹사이트입니다</p>
                         <S.SiteBtn4>
                             <a href="https://da22sol.github.io/amuse">site</a>
                             <a href="https://github.com/da22sol/amuse">git에서보기</a>
@@ -107,13 +107,13 @@ const Publishing = () => {
                         <S.PubTH2>컴퍼니 회사 사이트</S.PubTH2>
                         <p>가상의 회사 사이트를 gdweb를 참고하여 만들었습니다.</p>
                         <p> fullPage.js 이루어진 반응형 웹사이트입니다</p>
-                        <S.SiteBtn4>
+                        <S.SiteBtn3>
                             <a href="https://da22sol.github.io/company">site</a>
                             <a href="https://github.com/da22sol/company">git에서보기</a>
                             <a href="https://frosted-brook-b69.notion.site/3b51d434d5b94d3c998bfd86c79490c2?pvs=74">
                                 코드리뷰
                             </a>
-                        </S.SiteBtn4>
+                        </S.SiteBtn3>
                     </S.PubTxt>
                 </S.company>
             </S.PubBox>
