@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import * as S from './skills.style';
+
 const Skills = () => {
     const AboutScroll = useRef(null);
     const AboutUl = useRef(null);
